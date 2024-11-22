@@ -13,7 +13,7 @@
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+  A style of elegance and sophistication portrayed in every bunch of creatively designed flowers.
 </div>
 
 <br />
