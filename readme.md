@@ -18,9 +18,11 @@
 
 <br />
 
+[![wakatime](https://wakatime.com/badge/user/66c898d4-b644-4b90-8260-c7e878ea4c2a/project/1f34ee0e-e42a-4bc3-8ff6-687e517b4f95.svg)](https://wakatime.com/badge/user/66c898d4-b644-4b90-8260-c7e878ea4c2a/project/1f34ee0e-e42a-4bc3-8ff6-687e517b4f95)
+
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
+![](https://visit-counter.vercel.app/counter.png?page=leandrojrladeras/WD-SEATWORK-FLORAL-SHOP)
 
 ---
 
@@ -34,9 +36,6 @@
     <li>
       <a href="#overview">Overview</a>
       <ol>
-        <li>
-          <a href="#key-components">Key Components</a>
-        </li>
         <li>
           <a href="#technology">Technology</a>
         </li>
@@ -58,7 +57,7 @@
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
 Description of the project in details.
-
+The project is about making a website for a floral shop, with a design that is suited for it's aesthetics and what the company is about.
 Guiding Question:
 - What is the project
 - Whats the purpose
@@ -76,7 +75,6 @@ Guiding Question:
 <!-- TODO: List of Technology Used -->
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
 
 ## Rules, Practices and Principles
 1. Always use `WD-` in the front of the Title of the Project for the Subject followed by your custom naming.
