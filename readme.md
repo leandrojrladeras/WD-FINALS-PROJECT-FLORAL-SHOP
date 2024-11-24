@@ -13,7 +13,10 @@
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  A style of elegance and sophistication portrayed in every bunch of creatively designed flowers.
+  Final Project
+</div>
+<div align="center">
+Rebranding of an existing floral store website.
 </div>
 
 <br />
@@ -57,7 +60,7 @@
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
 Description of the project in details.
-The project is about making a website for a floral shop, with a design that is suited for it's aesthetics and what the company is about.
+Rebranding of an existing floral store website.
 Guiding Question:
 - What is the project
 - Whats the purpose
