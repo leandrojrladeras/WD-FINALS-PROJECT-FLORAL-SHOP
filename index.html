@@ -1,40 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"
-        <html lang="en">
-        <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>La Rosa Flowershop</title>
-                <link rel="stylesheet" href="assets/css/style.css"
-        </head>
-        </html>
-        </head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Rosa Flower Shop</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+        .header {
+        padding-top: 50px;
+        background-color: #fff;
+        padding-bottom: 50px;
+        }
+        .logo img {
+        max-height: 100px;
+        }
+        .icons {
+                display: flex;
+                gap: 40px
+        }
+        .icons img {
+                width: auto;
+                height: 100px;
+        }
+        .banner {
+        image-orientation: center; /* Center-align the content within the banner */
+        }
+        .custom-banner-img {
+        width: 100%; /* Adjust width to your desired size, e.g., 100%, 80%, 500px, etc. */
+        max-width: 1700px; /* Optionally set a max width to prevent it from getting too large */
+        height: auto; /* Maintain the aspect ratio */
+        max-height: 1000px;
+        display: block;
+        margin: 0 auto; /* Center-align the image */
+        }
+        .bouquets h2 {
+        padding-top: 100px;
+        text-align: center;
+        }
+        .bouquet {
+        margin-bottom: 100px;
+        }
+        .about-us {
+        padding-top: 100px;
+        color: #4b3e2d;
+        margin: 40px 0;
+        padding-bottom: 100px;
+        }
+</style>
+</head>
 <body>
-<div class="header">
+<header class="header">
+        <div class="container d-flex justify-content-between align-items-center">
         <div class="logo">
-                <img src="assets/img/La Rosa Flowershop Logo.jpg" alt="La Rosa Flower Shop Logo">
-                <h1>LA ROSA FLOWERSHOP</h1>
+                <img src="assets/img/LOGO.png" alt="La Rosa Flower Shop">
         </div>
-<div class="icons">
-        <div>
-                <img src="assets/img/CART ICON.png" alt="Cart Icon">
-                <p>Cart</p>
+        <div class="icons">
+                <a href="pages/Cart/index.html" class="cart-icon">
+                <img src="assets/img/CART ICON.png" alt="Cart">
+                </a>
+                <a href="pages/Profile/index.html" class="profile-icon">
+                <img src="assets/img/PROFILE ICON.png" alt="Profile">
+                </a>
         </div>
-        <div>
-                <img src="assets/img/PROFILE ICON.png" alt="Profile Icon">
-                <p>Profile</p>
         </div>
-</div>
-</div>
-<div class="banner">
-        <img src="assets/img/HOME PAGE IMG.png" alt="Flowers">
-        <div class="banner-text">
-                <p>A style of elegance and sophistication portrayed in every bunch of creatively designed</p>
+</header>
+<section class="banner">
+        <div class="banner-img">
+                <img src="assets/img/BG+FINALLL.png" alt="Banner Image" class="custom-banner-img"
         </div>
-</div>
+</section>
+<section class="bouquets container">
+        <h2>BOUQUETS</h2>
+        <div class="row">
+        <div class="col-md-4">
+                <div class="bouquet">
+                <img src="assets/img/B1.png" alt="Lovely Bliss" class="img-fluid">
+                <h3>Lovely Bliss</h3>
+                <p>₱5,850.00</p>
+                <button class="btn btn-primary add-to-cart" data-bouquet="Lovely Bliss">Add to Cart</button>
+                </div>
+        </div>
+        <div class="col-md-4">
+                <div class="bouquet">
+                <img src="assets/img/B2.png" alt="Blossom Grandeur" class="img-fluid">
+                <h3>Blossom Grandeur</h3>
+                <p>₱7,350.00</p>
+                <button class="btn btn-primary add-to-cart" data-bouquet="Blossom Grandeur">Add to Cart</button>
+                </div>
+        </div>
+        <div class="col-md-4">
+                <div class="bouquet">
+                <img src="assets/img/B3.png" alt="Blushing Dreamscape" class="img-fluid">
+                <h3>Blushing Dreamscape</h3>
+                <p>₱6,500.00</p>
+                <button class="btn btn-primary add-to-cart" data-bouquet="Blushing Dreamscape">Add to Cart</button>
+                </div>
+        </div>
+        </div>
+</section>
+<section class="about-us text-center">
+        <h2>ABOUT US</h2>
+        <a href="pages/About Us/index.html" class="btn btn-secondary">Click here to know more about Us</a>
+        <p>Follow Us On Instagram <a href="https://www.instagram.com/larosaflowershop/" target="_blank">@larosaflowershop</a></p>
+</section>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        addToCartButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                const bouquet = button.getAttribute('data-bouquet');
+                const price = button.getAttribute('data-price');
+                const image = button.getAttribute('data-image');
+                const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+                cartItems.push({ bouquet, price, image });
+                localStorage.setItem('cartItems', JSON.stringify(cartItems));
+                alert(`${bouquet} has been added to the cart.`);
+                });
+        });
+        });
+</script>
 </body>
 </html>

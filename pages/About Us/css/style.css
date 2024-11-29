@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 100px;
+    padding: 100px;
+    background-color: #f8f9fa;
+}
+.container {
+    padding: 20px;
+}
+.contact-info h4,
+.information h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-info p,
+.information p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 18px;
+    color: #4b3e2d;
+}
+@media (max-width: 768px) {
+    .contact-info,
+    .about-us,
+    .information {
+        margin-bottom: 20px;
+    }
+}
