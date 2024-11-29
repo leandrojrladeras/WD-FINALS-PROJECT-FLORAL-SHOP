@@ -106,4 +106,4 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Bootstrap | Allows the site to be dynamic and flexible | https://blog.getbootstrap.com/2020/08/06/bootstrap-4-5-2/ |
