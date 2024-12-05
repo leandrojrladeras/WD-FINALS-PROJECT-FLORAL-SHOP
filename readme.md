@@ -59,8 +59,7 @@ Rebranding of an existing floral store website.
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
-The project is about rebranding the website layout of an existing floral store. The main objectives of this project is to be familiarized with the application of html, css, and javascript and to make a responsive website.
+The project is about rebranding the website layout of an existing floral store. The main objectives of this project is to be familiarized with the application of html, css, and javascript and to make a responsive website. The floral store sells a variety of bouquets intricately crafted for your special occasion.
 
 ### Technology
 <!-- TODO: List of Technology Used -->
